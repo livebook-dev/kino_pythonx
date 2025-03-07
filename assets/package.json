@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "kino-bundler",
+    "dev": "kino-bundler --watch --dev",
+    "format": "prettier --write 'packs/**/*.{js,json,css,md}' '*.js' --no-error-on-unmatched-pattern"
+  },
+  "dependencies": {
+    "vega": "^5.27.0",
+    "vega-embed": "^6.24.0",
+    "vega-lite": "^5.16.3"
+  },
+  "devDependencies": {
+    "@livebook/kino-bundler": "^0.2.1",
+    "prettier": "^3.4.1"
+  }
+}

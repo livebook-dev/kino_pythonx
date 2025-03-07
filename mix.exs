@@ -11,7 +11,7 @@ defmodule KinoPythonx.MixProject do
       description: @description,
       name: "KinoPythonx",
       version: "0.1.0",
-      elixir: "~> 1.14",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       docs: docs(),
@@ -21,7 +21,8 @@ defmodule KinoPythonx.MixProject do
 
   def application do
     [
-      mod: {KinoPythonx.Application, []}
+      mod: {KinoPythonx.Application, []},
+      extra_applications: []
     ]
   end
 
